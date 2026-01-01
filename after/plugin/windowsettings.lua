@@ -1,4 +1,0 @@
-function SetTransparency()
-end
-
-SetTransparency()
