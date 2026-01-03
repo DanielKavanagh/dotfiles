@@ -38,7 +38,7 @@ Repo for versioning my nvim config files.
 ### Custom Remaps
 
 > [!NOTE] 
-> <leader> is the space key*
+> `<leader>` is mapped to space in this config
 
 | Shortcut | Description |
 | -------- | ----------- |
