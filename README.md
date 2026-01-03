@@ -35,6 +35,14 @@ Repo for versioning my nvim config files.
 | `grr` | Open references (`vim.lsp.buf.references()`) |
 | `grt` | Open type definition (`vim.lsp.buf.type_definition()`) |
 
+### Custom Remaps
+
+> [!NOTE] 
+> <leader> is the space key*
+
+| Shortcut | Description |
+| -------- | ----------- |
+| `<leader>tws` | Trims whitespace from end of lines for entire file |
 
 ## Regexes
 
