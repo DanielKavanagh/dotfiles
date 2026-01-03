@@ -71,6 +71,7 @@ return {
                     'vimdoc',
                     'vue',
                     'xml',
+                    'yaml'
                 }, {
                         max_jobs = 8,
                     })
