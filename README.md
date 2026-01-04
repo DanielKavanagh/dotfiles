@@ -27,6 +27,7 @@ Repo for versioning my nvim config files.
 | `gg=G` | Auto-indent entire file |
 | `U` | Undo change |
 | `{0..n}U` | Undo n change(s) |
+| `<C-r>` | Redo change |
 | `{0..n}<C-r>` | Redo n change(s) |
 
 ### NVIM LSP
