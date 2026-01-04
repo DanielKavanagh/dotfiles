@@ -4,7 +4,14 @@ vim.keymap.set("n", "<leader>tws", ":%s/\\s\\+$//<CR>", {
     desc = "Trim end of line whitespace for entire file",
     silent = true
 })
-vim.keymap.set("n", "<leader>tww", ":set wrap!<CR>", {})
+vim.keymap.set("n", "<leader>tww", ":set wrap!<CR>", {
+    desc = "Toggle word wrap",
+    silent = true
+})
+vim.keymap.set("n", "<leader>csh", ":let @/ = \"\"<CR>", {
+    desc = "Clear search highlighting",
+    silent = true
+})
 
 vim.o.shiftwidth = 4
 vim.o.softtabstop = 2

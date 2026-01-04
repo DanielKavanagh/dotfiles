@@ -15,7 +15,8 @@ return {
             require("mason-lspconfig").setup {
                 ensure_installed = {
                     "lua_ls",
-                    "pyright"
+                    "pyright",
+                    "gopls"
                 },
             }
         end
