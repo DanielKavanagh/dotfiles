@@ -37,12 +37,13 @@ Repo for versioning my nvim config files.
 
 ### Custom Remaps
 
-> [!NOTE] 
+> [!NOTE]
 > `<leader>` is mapped to space in this config
 
 | Shortcut | Description |
 | -------- | ----------- |
 | `<leader>tws` | Trims whitespace from end of lines for entire file |
+| `<leader>tww` | Toggles word wrap |
 
 ## Regexes
 
