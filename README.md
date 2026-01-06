@@ -6,6 +6,9 @@ Repo for versioning my nvim config files.
 
 ## VIM Shortcuts
 
+> [!NOTE]
+> `<leader>` is mapped to space in this config
+
 ### Movement
 
 | Shortcut | Description |
@@ -40,11 +43,9 @@ Repo for versioning my nvim config files.
 | `grn` | Rename (`vim.lsp.buf.rename()`) |
 | `grr` | Open references (`vim.lsp.buf.references()`) |
 | `grt` | Open type definition (`vim.lsp.buf.type_definition()`) |
+| `<leader>gf` | Format file using linter/formatter (`vim.lsp.buf.format()`) |
 
 ### Custom Remaps
-
-> [!NOTE]
-> `<leader>` is mapped to space in this config
 
 | Shortcut | Description |
 | -------- | ----------- |
