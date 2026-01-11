@@ -18,6 +18,7 @@ return {
 					"pyright",
 					"gopls",
 					"stylua",
+					"ruff",
 				},
 			})
 		end,
