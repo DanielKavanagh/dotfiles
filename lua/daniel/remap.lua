@@ -22,6 +22,7 @@ vim.keymap.set("n", "<leader>tt", ":NvimTreeToggle<CR>", {
 })
 
 vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
+vim.keymap.set("n", "<leader>tp", ":Markview splitToggle<CR>", {})
 
 vim.o.shiftwidth = 4
 vim.o.tabstop = 4

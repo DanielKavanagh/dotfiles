@@ -22,6 +22,9 @@ Repo for versioning my nvim config files.
 | `gt` | Move to next tab |
 | `gT` | Move to previous tab |
 | `{0..n}gt` e.g. `2gt` | Go to the {n}<sup>th</sup> tab |
+| `]m` `[m` | Move to start of next/prev block in code |
+| `]M` `[M` | Move to end of next/prev block in code |
+| `]d` `[d` | Move to end of next/prev block in code |
 
 ### Formatting
 
@@ -52,6 +55,7 @@ Repo for versioning my nvim config files.
 | `<leader>tws` | Trims whitespace from end of lines for entire file |
 | `<leader>tww` | Toggles word wrap |
 | `<leader>csh` | Clear search highlighting |
+| `<leader>tp` | Toggle Markview split preview |
 
 ## Regexes
 
