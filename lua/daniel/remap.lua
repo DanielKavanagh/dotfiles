@@ -36,3 +36,9 @@ vim.o.number = true
 vim.o.relativenumber = true
 vim.o.signcolumn = "yes"
 vim.diagnostic.config({ virtual_text = true })
+
+-- Disable folding
+vim.opt.fillchars = { fold = " " }
+vim.opt.foldmethod = "indent"
+vim.opt.foldenable = false
+vim.opt.foldlevel = 99
