@@ -3,7 +3,7 @@
   "gitsigns.nvim": { "branch": "main", "commit": "42d6aed4e94e0f0bbced16bbdcc42f57673bd75e" },
   "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },
   "lazydev.nvim": { "branch": "main", "commit": "5231c62aa83c2f8dc8e7ba957aa77098cda1257d" },
-  "markview.nvim": { "branch": "main", "commit": "18fc148c83925919d94f3fc8e5c74f2d108b9b44" },
+  "markview.nvim": { "branch": "main", "commit": "900272b66043d5e3d3f5a74b34eb4e93d3a0ce88" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "fe661093f4b05136437b531e7f959af2a2ae66c8" },
   "mason.nvim": { "branch": "main", "commit": "44d1e90e1f66e077268191e3ee9d2ac97cc18e65" },
   "none-ls.nvim": { "branch": "main", "commit": "1fcf9cbf9acf893455c6cee792537aa709de62cb" },
@@ -21,6 +21,7 @@
   "telescope-ui-select.nvim": { "branch": "master", "commit": "6e51d7da30bd139a6950adf2a47fda6df9fa06d2" },
   "telescope.nvim": { "branch": "master", "commit": "e69b434b968a33815e2f02a5c7bd7b8dd4c7d4b2" },
   "tokyonight.nvim": { "branch": "main", "commit": "5da1b76e64daf4c5d410f06bcb6b9cb640da7dfd" },
+  "trouble.nvim": { "branch": "main", "commit": "bd67efe408d4816e25e8491cc5ad4088e708a69a" },
   "uv.nvim": { "branch": "main", "commit": "b565e03a573ee2f6493d0516b7854b9142855a6a" },
   "vim-liquid": { "branch": "master", "commit": "ca82e18f299c10c10f3f9ee2e0a0804dc3dd16dc" }
 }
