@@ -20,6 +20,9 @@ vim.keymap.set("n", "<leader>tt", ":NvimTreeToggle<CR>", {
 	desc = "Toggle nvim-tree",
 	silent = true,
 })
+vim.keymap.set("n", "<leader>Q", ":cquit<CR>", {
+	desc = "Force quit nvim with error"
+})
 
 vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
 vim.keymap.set("n", "<leader>tp", ":Markview splitToggle<CR>", {})
@@ -36,6 +39,7 @@ vim.o.number = true
 vim.o.relativenumber = true
 vim.o.signcolumn = "yes"
 vim.diagnostic.config({ virtual_text = true })
+vim.o.autochdir = true
 
 -- Disable folding
 vim.opt.fillchars = { fold = " " }

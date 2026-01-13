@@ -19,6 +19,7 @@ return {
 					"gopls",
 					"stylua",
 					"ruff",
+					"jdtls",
 				},
 			})
 		end,
