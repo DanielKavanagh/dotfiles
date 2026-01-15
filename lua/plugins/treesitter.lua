@@ -25,6 +25,7 @@ return {
 			"git_rebase",
 			"gitcommit",
 			"gitignore",
+			"go",
 			"html",
 			"java",
 			"javadoc",
