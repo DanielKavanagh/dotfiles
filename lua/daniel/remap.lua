@@ -37,6 +37,7 @@ vim.o.autoindent = true
 vim.o.cursorline = true
 vim.o.number = true
 vim.o.relativenumber = true
+vim.opt.statuscolumn = "%s %{v:lnum} %{v:relnum} "
 vim.o.signcolumn = "yes"
 vim.diagnostic.config({ virtual_text = true })
 vim.o.autochdir = true

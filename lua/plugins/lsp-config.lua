@@ -19,7 +19,8 @@ return {
 					"gopls",
 					"stylua",
 					"ruff",
-					"jdtls",
+					"emmet_language_server",
+					"tailwindcss"
 				},
 			})
 		end,
