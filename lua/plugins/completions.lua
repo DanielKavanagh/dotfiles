@@ -11,6 +11,7 @@ return {
 	},
 	{
 		"hrsh7th/nvim-cmp",
+		dependencies = { "onsails/lspkind.nvim" },
 		config = function()
 			-- Set up nvim-cmp.
 			local cmp = require'cmp'
@@ -24,8 +25,23 @@ return {
 					end,
 				},
 				window = {
-					completion = cmp.config.window.bordered( { border = 'rounded' }),
+					completion = {
+						border = "rounded",
+						col_offset = -3,
+						side_padding = 0,
+					},
 					documentation = cmp.config.window.bordered( { border = 'rounded' }),
+				},
+				formatting = {
+					fields = { "icon", "abbr", "menu", "kind" },
+					format = function(entry, vim_item)
+						local lspkind = require("lspkind")
+						local kind = lspkind.cmp_format({ mode = "symbol_text", maxwidth = 50 })(entry, vim_item)
+						kind.icon = " " .. (kind.icon or "") .. "  "
+						kind.kind = "   (" .. (kind.kind or "") .. ")"
+
+						return kind
+					end,
 				},
 				mapping = cmp.mapping.preset.insert({
 					['<C-b>'] = cmp.mapping.scroll_docs(-4),
@@ -36,7 +52,7 @@ return {
 				}),
 				sources = cmp.config.sources({
 					{ name = 'nvim_lsp' },
-					{ name = 'luasnip' }, -- For luasnip users.
+					{ name = 'luasnip' },
 				}, {
 						{ name = 'buffer' },
 					})
