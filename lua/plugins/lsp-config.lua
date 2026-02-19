@@ -6,13 +6,14 @@ return {
 		end,
 	},
 	{
-		"mason-org/mason-lspconfig.nvim",
+		"jay-babu/mason-null-ls.nvim",
+		event = { "BufReadPre", "BufNewFile" },
 		dependencies = {
-			{ "mason-org/mason.nvim", opts = {} },
-			"neovim/nvim-lspconfig",
+			"williamboman/mason.nvim",
+			"nvimtools/none-ls.nvim",
 		},
 		config = function()
-			require("mason-lspconfig").setup({
+			require("mason-null-ls").setup({
 				ensure_installed = {
 					"lua_ls",
 					"basedpyright",
@@ -20,9 +21,31 @@ return {
 					"stylua",
 					"ruff",
 					"emmet_language_server",
-					"tailwindcss"
+					"html",
+					"cssls",
+					"tailwindcss",
+					"prettierd",
+				},
+				automatic_installation = true,
+				handlers = {
+					function(source_name, methods)
+						require("mason-null-ls").default_setup(source_name, methods)
+					end,
 				},
 			})
+		end,
+	},
+	{
+		"mason-org/mason-lspconfig.nvim",
+		dependencies = {
+			{
+				"mason-org/mason.nvim",
+				opts = {},
+			},
+			"neovim/nvim-lspconfig",
+		},
+		config = function()
+			require("mason-lspconfig").setup({})
 		end,
 	},
 	{
