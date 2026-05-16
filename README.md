@@ -2,6 +2,11 @@
 
 Repo for versioning my nvim config files.
 
+# Packages Required for Current Plugins (2026-05-16)
+
+- Treesitter required tree-sitter-cli (installed via package manager, not npm)
+  - https://docs.rs/tree-sitter-cli/latest/tree_sitter_cli/
+
 # Useful Keybind Reference
 
 ## VIM Shortcuts
